@@ -1,15 +1,13 @@
 import React from 'react';
-
-import {SafeAreaView, ScrollView, View, Text, StatusBar} from 'react-native';
+import HomeScreen from './src/screens/HomeScreen';
+import {SafeAreaView, ScrollView, View, Text} from 'react-native';
 
 function App(): JSX.Element {
   return (
     <SafeAreaView>
-      <StatusBar />
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <View className="flex-row justify-center">
-          <Text className="text-red-600">Hello World</Text>
-        </View>
+      <ScrollView>
+        {/* Landing Page Goes here */}
+        <HomeScreen />
       </ScrollView>
     </SafeAreaView>
   );
