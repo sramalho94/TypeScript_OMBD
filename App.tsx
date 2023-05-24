@@ -1,6 +1,6 @@
 import React from 'react';
-import {StatusBar} from 'react-native/types';
-import {SafeAreaView, ScrollView, View, Text} from 'react-native';
+
+import {SafeAreaView, ScrollView, View, Text, StatusBar} from 'react-native';
 
 function App(): JSX.Element {
   return (
@@ -8,7 +8,7 @@ function App(): JSX.Element {
       <StatusBar />
       <ScrollView contentInsetAdjustmentBehavior="automatic">
         <View className="flex-row justify-center">
-          <Text>Hello World</Text>
+          <Text className="text-red-600">Hello World</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
